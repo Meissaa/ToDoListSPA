@@ -7,7 +7,6 @@ App based on the MVVM. Application is built on each one of the following technol
 ## JavaScript
 * KnockoutJS
 * SammyJS
-
 ## C#
 * ASP.NET framework
 * Entity Framework ORM
