@@ -2,7 +2,18 @@
 ### ToDo List Single Page Application ASP.NET
 
 ToDoList is simple to-do list and task manager app that helps you get stuff done.
-App based on the MVVM, KnockoutJS, SammyJS.
+App based on the MVVM. Application is built on each one of the following technologies:
+
+## JavaScript
+* KnockoutJS
+* SammyJS
+
+## C#
+* ASP.NET framework
+* Entity Framework ORM
+* MSSQL Server database
+* IoC/DI – Microsoft Unity
+* Log4Net
 
 ## Main functions: 
 
