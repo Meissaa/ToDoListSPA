@@ -1,5 +1,5 @@
 ﻿var token = "";
-var base_url = "http://localhost:49981/api/v1/";
+var base_url = "http://localhost/api/v1/";
 
 function sendajaxRequest(httpMethod, url, reqData) {
     var d = $.Deferred()
