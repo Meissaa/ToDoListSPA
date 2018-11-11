@@ -4,10 +4,10 @@
 ToDoList is simple to-do list and task manager app that helps you get stuff done.
 App based on the MVVM. Application is built on each one of the following technologies:
 
-## JavaScript
+JavaScript
 * KnockoutJS
 * SammyJS
-## C#
+C#
 * ASP.NET framework
 * Entity Framework ORM
 * MSSQL Server database
