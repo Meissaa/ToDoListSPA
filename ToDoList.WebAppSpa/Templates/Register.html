@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div id="divRegister" style="display:block" data-bind="with: userViewModel">
+        <h1>Register</h1>
+        <br>
+        <div class="main-agileinfo">
+            <div class="agileits-top">
+                <div class="control-group">
+                    <div class="controls">
+                        <input type="text" name="UserName" placeholder="Username" required="" data-bind="value: UserName" />
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="text" name="Password" placeholder="Password" required="" data-bind="value: Password" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="text" name="FirstName" placeholder="FirstName" required="" data-bind="value: FirstName" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="text" name="LastName" placeholder="LastName" required="" data-bind="value: LastName" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="text" name="EmailAddress" placeholder="EmailAddress" required="" data-bind="value: EmailAddress" />
+                        </div>
+                    </div>
+                    <br>
+                    <a href="#" data-bind="click: RegisterUser" class="btn btn-success" style="background-color:seagreen">Register</a>
+                    <a href="#/" class="btn btn-info" style="margin:20px; background-color:transparent">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="w3lsg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

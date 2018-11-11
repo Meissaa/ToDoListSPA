@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div id="divGetTasks" style="display:block" data-bind="with: toDoListTaskViewModel">
+        <div id="divLogout" style="display:block" data-bind="with: userViewModel">
+            <a href="#" data-bind="click: Logout" class="btn btn-info" style="position:relative; left:1200px; top:5px; background-color:transparent">Logout</a>
+        </div>
+        <h1>My Tasks</h1>
+        <a href="#" style="position:relative; left:200px; color:aquamarine" data-bind="click: CreateItemTask">Create Task</a>
+        <br>
+        <table class="table table-condensed" style="color:white; margin:auto; width:1000px;">
+            <thead>
+                <tr>
+                    <th><b>IsCompleted</b></th>
+                    <th><b>Text</b></th>
+                    <th><b>CreateDate</b></th>
+                    <th><b>CompleteDate</b></th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: ItemTasks">
+                <tr>
+                    <td data-bind="text: $data.Id" style="display:none">
+                        <br>
+                    </td>
+                    <td>
+                        <input type="checkbox" data-bind="checked: $data.IsCompleted, click: $parent.editIsCompleted.bind($parent, $index(), $data.Id, $data.Text,
+                                    $data.IsCompleted, $data.CreateDate, $data.CompleteDate)" />
+                        <br>
+                    </td>
+                    <td data-bind="text: $data.Text, disable: $data.IsCompleted">
+                        <br>
+                    </td>
+                    <td data-bind="text: moment($data.CreateDate).format('l LT')">
+                        <br>
+                    </td>
+                    <td data-bind="text: moment($data.CompleteDate).format('l LT')">
+                        <br>
+                    </td>
+                    <td>
+                        <a href="#" style="color:aquamarine" data-bind="click: $parent.EditItemTask.bind($parent, $index(), $data.Id, $data.Text, $data.IsCompleted,
+                                       $data.CreateDate, $data.CompleteDate)">Edit</a>
+                        <a href="#" style="color:aquamarine" data-bind="click: $parent.RemoveTask.bind($parent, $data.Id)">Remove</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <a href="#todolist" style="position:relative; left:200px; background-color:transparent" class="btn btn-info">Back</a>
+    </div>
+    <ul class="w3lsg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

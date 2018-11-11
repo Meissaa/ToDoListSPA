@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div id="divGetLists" style="display:block" data-bind="with: toDoListItemViewModel">
+        <div id="divLogout" style="display:block" data-bind="with: userViewModel">
+            <a href="#" data-bind="click: Logout" class="btn btn-info" style="position:relative; left:1200px; top:5px; background-color:transparent">Logout</a>
+        </div>
+        <h1>My ToDoLists</h1>
+        <a href="#" style="position:relative; left:200px; color:aquamarine" data-bind="click: CreateItem">Create New</a>
+        <br />
+        <table class="table table-bordered" style="color:white; margin:auto; width:1000px;">
+            <thead>
+                <tr>
+                    <th><b>Name</b></th>
+                    <th><b>CreateDate</b></th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: Items">
+                <tr>
+                    <td data-bind="text: $data.Id" style="display:none">
+                        <br>
+                    </td>
+                    <td data-bind="text: $data.Name">
+                        <br>
+                    <td data-bind="text: moment($data.CreateDate).format('l LT')">
+                        <br>
+                    </td>
+                    <td>
+                        <a href="#" style="color:aquamarine" data-bind="click: $parent.GetDetail.bind($parent, $data.Id)">Details</a>
+                        <a href="#" style="color:aquamarine" data-bind="click: $parent.EditItem.bind($parent, $index(), $data.Id, $data.Name, $data.CreateDate)">Edit</a>
+                        <a href="#" style="color:aquamarine" data-bind="click: $parent.RemoveItem.bind($parent, $data.Id)">Remove</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <ul class="w3lsg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

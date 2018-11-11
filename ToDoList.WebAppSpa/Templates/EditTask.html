@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div id="divEditTask" style="display:block" align="center" data-bind="with: toDoListTaskViewModel">
+        <h1>Edit Task</h1>
+        <br>
+        <div class="agileits-top">
+            <div class="control-group">
+                <div class="controls">
+                    <input type="text" name="Text" placeholder="Text" required="" data-bind="value: Text" />
+                </div>
+                <br>
+                <div class="control-group">
+                    <label for="IsCompleted" class="control-label" style="color:white">IsCompleted</label>
+                    <div class="controls">
+                        <input type="checkbox" name="IsCompleted" data-bind="checked: IsCompleted" />
+                    </div>
+                </div>
+                <br>
+                <div class="control-group">
+                    <label for="CreateDateTask" class="control-label" style="color:white">CreateDateTask</label>
+                    <div class="controls">
+                        <input type="datetime-local" name="CreateDateTask" data-bind="value: CreateDateTask" />
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="control-group">
+                    <label for="CompleteDate" class="control-label" style="color:white">CompleteDate</label>
+                    <div class="controls">
+                        <input type="datetime-local" name="CompleteDate" data-bind="value: CompleteDate" />
+                    </div>
+                </div>
+                <br>
+                <a href="#" data-bind="click: EditTask" class="btn btn-success" style="background-color:seagreen">Edit</a>
+                <a href="#todolist/task" class="btn btn-info" style="margin:20px; background-color:transparent">Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

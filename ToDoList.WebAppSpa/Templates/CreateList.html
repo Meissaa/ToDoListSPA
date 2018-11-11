@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div id="divCreateList" style="display:block" align="center" data-bind="with: toDoListItemViewModel">
+        <h1>Create List</h1>
+        <br>
+        <div class="agileits-top">
+            <div class="control-group">
+                <div class="controls">
+                    <input type="text" name="Name" placeholder="Name" required="" data-bind="value: Name" />
+                </div>
+                <br>
+                <div class="control-group">
+                    <div class="controls">
+                        <input type="datetime-local" name="CreateDate" placeholder="CreateDate" required="" data-bind="value: CreateDate" />
+                    </div>
+                </div>
+                <br>
+                <a href="#" data-bind="click: CreateListItem" class="btn btn-success" style="background-color:seagreen">Create</a>
+                <a href="#todolist" class="btn btn-info" style="margin:20px; background-color:transparent">Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
