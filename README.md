@@ -1,7 +1,7 @@
 # ToDoList
 ### ToDo List Single Page Application ASP.NET
 
-ToDoList is simple to-do list and task manager app that helps you get stuff done.
+ToDoList is simple to-do list and task manager app that helps you get stuff done. Application implement a simple user access (login and password) and simple session management.
 App based on the MVVM. Application is built on each one of the following technologies:
 
 JavaScript
